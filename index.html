@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Management</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Product Management</h1>
+        <form id="productForm" class="mb-5">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" class="form-control" placeholder="Enter product name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="productPrice">Product Price</label>
+                    <input type="text" id="productPrice" class="form-control" placeholder="Enter product price">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="productCat">Product Category</label>
+                    <input type="text" id="productCat" class="form-control" placeholder="Enter product category">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="productDesc">Product Description</label>
+                    <input type="text" id="productDesc" class="form-control" placeholder="Enter product description">
+                </div>
+            </div>
+            <button class="btn btn-custom btn-block" id="btn" type="button">Add Product</button>
+        </form>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Index</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="tableRow"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
